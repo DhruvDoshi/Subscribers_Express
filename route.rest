@@ -1,0 +1,29 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/5eb3e71c85b0a01538f4fbad
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Amazing man",
+    "subscribedToChannel": "DCS-BBN"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/5eb3e71c85b0a01538f4fbad
+
+
+###
+
+PATCH  http://localhost:3000/subscribers/5eb3e78c85b0a01538f4fbae
+Content-Type: application/json
+
+{
+    "name": "More Amazing man"
+}
